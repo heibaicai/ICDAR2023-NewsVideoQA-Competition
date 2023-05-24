@@ -21,10 +21,6 @@ This is one of our trained models, ready for inference purposes.
 ### Test / Inference
 ``` bash test.sh ```
 ### Ensemble
+``` bash ensemble.sh ```
 - We have trained numerous models, and model ensemble is achieved by utilizing a voting mechanism among multiple models to obtain the final output. Due to the large size and the significant number of models, we are only uploading one of them as an example.On the validation set, the metrics achieved are an accuracy of **50.42%** and an ANLS of **65.42%**.
 - Applying model ensemble techniques, which involved simple voting among the top 6 best-performing models, we further improved the performance to an accuracy of **51.68%** and an ANLS score of **66.83%** on the same validation set.
-``` bash ensemble.sh ```
-
-
-
-
