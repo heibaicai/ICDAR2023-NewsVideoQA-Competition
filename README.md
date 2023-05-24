@@ -1,12 +1,11 @@
-## Training / Testing BERT QA models on NewsVideoQA
-
-For finetuning pretrained BERT models, we use simpletransformers which in turn is based on transformers package. 
-
+## ICDAR2023-NewsVideoQA-Competition
+Please refer to our report for technical details.
+[report](report.pdf)
 ### Installing simpletransformers
 For installing simpletransformers please follow original instructions We dont use fp16 while finetuning BERT models in our experiments. You need not install Apex if you dont want to use fp16 training.
 
-### Fine tune a pretrained BERT model on DocVQA
-We have experimented with three different pre-trained models and performed model fusion. Here are the names of the models:
+### Fine tune a pretrained BERT model
+We have experimented with three different pre-trained BERT models and performed model fusion. Here are the names of the models:
 - bert-large-cased-whole-word-masking-finetuned-squad
 - deepset-bert-large-uncased-whole-word-masking-squad2
 - bert-large-uncased-whole-word-masking-finetuned-squad
@@ -15,7 +14,7 @@ For each video, we organize the content into SQUAD format. We utilize OCR, ASR, 
 
 ### Model
 This is one of our trained models, ready for inference purposes.
-[model](https:)
+[model](https://drive.google.com/drive/folders/1Ngifradd-Zj30g5y4kEZDpk5rr9wkZUX?usp=share_link)
 ### Train
 ``` bash train.sh ```
 ### Test / Inference
